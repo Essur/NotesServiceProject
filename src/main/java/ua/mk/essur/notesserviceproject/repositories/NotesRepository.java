@@ -6,5 +6,5 @@ import ua.mk.essur.notesserviceproject.model.Note;
 import java.util.List;
 
 public interface NotesRepository extends MongoRepository<Note, String> {
-    public List<Note> findAllByOrderByDateOfPublishDesc();
+    List<Note> findAllByOrderByDateOfPublishDesc();
 }
