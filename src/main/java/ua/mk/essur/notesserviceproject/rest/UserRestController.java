@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/user")
 public class UserRestController {
-    private MongoUserDetailsServiceImpl mongoUserDetailsService;
+    private final MongoUserDetailsServiceImpl mongoUserDetailsService;
 
     public UserRestController(MongoUserDetailsServiceImpl mongoUserDetailsService) {
         this.mongoUserDetailsService = mongoUserDetailsService;
