@@ -1,6 +1,6 @@
 # NotesService
 
-Small REST API which works with HTTP requests
+Small REST API which works with HTTP requests. App made without GUI(front-end), it`s working with endpoints (listed below).
 
 ## Features
 
