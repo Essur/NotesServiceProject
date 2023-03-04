@@ -21,7 +21,6 @@ public class NotesRestController {
     }
 
     @GetMapping
-    @RolesAllowed({"ROLE_USER","ROLE_ADMIN"})
     public ResponseEntity<List<Note>> findAllNotes(){
         List<Note> notes = notesRepository.findAll();
         return ResponseEntity.ok(notes);
