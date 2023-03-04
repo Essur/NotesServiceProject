@@ -8,5 +8,5 @@ import java.util.Optional;
 
 public interface UserRepository extends MongoRepository<MongoUser, String> {
     Optional<MongoUser> findByUsername(String username);
-    boolean deleteMongoUserByUsername(String username);
+    long deleteMongoUserByUsername(String username);
 }

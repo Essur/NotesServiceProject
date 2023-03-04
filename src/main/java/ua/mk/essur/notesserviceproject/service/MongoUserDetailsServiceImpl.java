@@ -56,7 +56,8 @@ public class MongoUserDetailsServiceImpl implements UserDetailsService {
     }
 
     public boolean deleteUserByUsername(String username){
-        return userRepository.deleteMongoUserByUsername(username);
+        long result = userRepository.deleteMongoUserByUsername(username);
+        return result == 1;
     }
 
 }
